@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+    header {
+        background-color: #2C3D4F;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        z-index: 2;
+    }
+
+    header a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .media {
+        background-color: rgb(243, 240, 196);
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+header img {
+    border-radius: 40px;
+    height: 90px;
+}
+
+nav {
+    background-color: #354A5F;
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: auto;
+}
+nav ul li {
+    position: relative;
+    margin: 0 15px;   
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: rgb(54, 48, 90);
+    border-radius: 5px;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+nav ul li ul li {
+    margin: 0;
+    width: 150px;
+}
+nav ul li ul li a {
+    padding: 10px;
+    font-weight: normal;
+}
+nav ul li:hover ul {
+    display: block;
+}
+
+.teks {
+    font-size: 17px;
+    text-align: justify;
+}
+
+.section_asas {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin: auto;
+    width: 96%;
+    padding: 10px;
+    padding-right: 20px;
+    padding-right: 20px;
+    animation: gerakkanan 3s ease;
+    position: relative;
+}
+
+@keyframes gerakkanan {
+    0%{
+        opacity: 0;
+        left: -300px;
+
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+
+    }
+}
+
+.section_asas article {
+    display: flex;
+    gap: 20px;
+}
+
+.sumber {
+    color: gray;
+    font-size: 15px;
+}
+.section_asas a {
+    display: inline-block;
+    transition: all linear 0.12s;
+    color: gray;
+    font-size: 15px;
+}
+.section_asas a:hover {
+    color: rgb(58, 24, 255);
+    text-decoration: underline;
+    transform: scale(1.01);
+}
+
+section a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.section_berita {
+    margin-top: 50px;
+    animation: gerakkanan2 4s ease;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.foto_media {
+    height: 220px;
+    max-width: 300px;
+    margin-top: 20%;
+}
+
+@keyframes gerakkanan2 {
+    0%{
+        opacity: 0;
+        left: -1500px;
+
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+
+    }
+}
+
+.berita {
+    font-size: 21px;
+    border-radius: 10px;
+    transition: all linear 0.15s;
+    margin: auto;
+    width: 170px;
+    margin-bottom: 10px;
+}
+.berita:hover {
+    background-color: rgb(112, 112, 112);
+    color: white;
+    transform: scale(1.2);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+section h3 {
+    text-align: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 5px auto;
+    padding: 0 10px;
+    margin: auto;
+    width: 98%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #e0e0e0;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.08);
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: black;
+    max-width: 100%;
+    transition: all linear 0.2s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.div_foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+.div_foto img {
+    width: 100%;
+    max-width: 220px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+aside {
+        background-color: #DB9B15;
+        border-radius: 7px;
+        padding: 20px;
+        line-height: 16px;
+        color: white;
+        height: 100px;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #354A5F;
+        color: white;
+        padding: 20px;
+        margin-top: 1%;
+    }

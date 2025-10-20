@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+    header {
+        background-color: #2C3D4F;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        z-index: 2;
+    }
+
+    header a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    header img {
+        border-radius: 40px;
+        height: 90px;
+    }
+
+    nav {
+        background-color: #354A5F;
+        margin-left: auto;
+
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        padding-top: auto;
+    }
+    nav ul li {
+        position: relative;
+        margin: 0 15px;   
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        display: block;
+    }
+    nav ul li a:hover {
+        background-color: rgb(54, 48, 90);
+        border-radius: 5px;
+    }
+    nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        background-color: black;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 5px;
+    }
+    nav ul li ul li {
+        margin: 0;
+        width: 150px;
+    }
+    nav ul li ul li a {
+        padding: 10px;
+        font-weight: normal;
+    }
+    nav ul li:hover ul {
+        display: block;
+    }
+
+main h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.kontak_form {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main section{
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  animation: katas ease 2s;
+}
+
+@keyframes katas {
+  0%{
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.kontak_form input,
+.kontak_form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.kontak_form button {
+  background: #354A5F;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+
+.kontak_form button:hover {
+  background: #2a3b4a;
+  transform: scale(1.03);
+}
+
+aside {
+  background-color: #DB9B15;
+  border-radius: 7px;
+  margin-top: 6%;
+  padding: 20px;
+  line-height: 16px;
+  color: white;
+  height: 100px;
+    }
+
+    footer {
+    text-align: center;
+    background-color: #354A5F;
+    color: white;
+    padding: 20px;
+    margin-top: 1%;
+    }
